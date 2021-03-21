@@ -44,7 +44,8 @@ export class TodoComponent implements OnInit {
         content: this.inputTodo,
         completed: false
       }
-    )
+    );
+    this.inputTodo = "";
   }
 
 }
