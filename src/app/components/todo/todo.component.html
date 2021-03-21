@@ -1,5 +1,5 @@
 <div class="todos">
-    <form>
+    <form (submit)="addTodo()">
         <input type="text" name="inputTodo" placeholder="Enter todo.." class="todo-input" [(ngModel)]="inputTodo"/>
         <input type="submit" class="todo-submit" value="Add Todo">
     </form>
