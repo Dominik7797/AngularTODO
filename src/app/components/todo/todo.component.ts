@@ -17,12 +17,19 @@ export class TodoComponent implements OnInit {
       {
         content: 'First Todo',
         completed: false,
-      }
+      },
       {
         content: 'Second Todo',
         completed: true,
       }
     ]
+  }
+
+  toggleDone (id) {
+    this.todos.map((v,i) =>{
+      if(i == id) v.completed = !v.completed;
+      return v;
+    })
   }
 
 }
